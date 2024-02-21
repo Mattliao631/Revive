@@ -57,6 +57,7 @@ public class VideoPlot : OneTimeUsage
 
     IEnumerator FadeOutVideoScreen() {
         while(Transition.instance.isFading) {
+            Debug.Log("Still fading.");
             yield return null;
         }
         UIManager.instance.popMenu();

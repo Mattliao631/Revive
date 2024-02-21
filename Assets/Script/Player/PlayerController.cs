@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     
     [Header("Player State")]
-    public bool acceptInput = true;
+    private bool acceptInput = true;
     public bool pressing_jump = false;
     public bool isWallSliding;
     public bool isWallJumping;
@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float groundSaveInterval = 5f;
     private float lastGroundSave;
+
     void Awake() {
         
     }
