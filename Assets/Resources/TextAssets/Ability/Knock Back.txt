@@ -1,0 +1,1 @@
+Incrase knock back distance while hit enemy.

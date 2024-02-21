@@ -1,0 +1,34 @@
+A
+Umm... Where am I?
+A
+My head....
+B
+Hey, are you awake?              Got a strange dream, right?
+A
+Yeah, it seems like I dreamt of a battle and a castle.
+B
+Dreams can be confusing sometimes. I'm Aber.
+B
+I'm not sure about the castle, but... I have a sister in a nearby mine. Maybe you can ask her.
+A
+Alright, I'll go and ask.
+B
+Judging by your attire,            are you a hunter?
+A
+I've forgotten everything else. Ugh, my head...
+A
+......
+A
+I'm fine.
+B
+Lately, the witch in the forest has been capturing people to offer. 
+B
+muttering something about 'everything will come to pass on the night of the full moon.'
+B
+My other sister was taken not long ago. If you can, could you help me find her?
+A
+A witch? I'll do my best,        don't worry.
+B
+Thank you.                              Be careful on the way.
+B
+If you need any help,           come back to me anytime.
