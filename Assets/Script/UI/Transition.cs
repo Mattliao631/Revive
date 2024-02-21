@@ -32,6 +32,7 @@ public class Transition : MonoBehaviour
             return;
         }
         isFading = true;
+        Debug.Log("Fade in is executed!");
         animator.SetTrigger("FadeIn");
     }
     public void FadeOut() {
@@ -44,6 +45,7 @@ public class Transition : MonoBehaviour
     }
 
     public void FadeFinish() {
+        Debug.Log("Fade finish is executed!");
         isFading = false;
     }
 }

@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
     public void LoadInScene() {
         player = GameObject.Find("Player");
         player.GetComponent<PlayerController>().SetAcceptInput(false);
+        Debug.Log(player.GetComponent<PlayerController>().GetAcceptInput());
         dead = true;
         Transition.instance.FadeOut();
         Debug.Log("Load in scene");
@@ -103,8 +104,12 @@ public class GameManager : MonoBehaviour
         
         OneTimeUsageManager.instance.UpdateUsages();
         
+        Transition.instance.FadeIn();
+        Debug.Log(player.GetComponent<PlayerController>().GetAcceptInput());
+        while(Transition.instance.isFading) {
+            yield return null;
+        }
         dead = false;
         player.GetComponent<PlayerController>().SetAcceptInput(true);
-        Transition.instance.FadeIn();
     }
 }

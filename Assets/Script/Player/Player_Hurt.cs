@@ -172,7 +172,7 @@ public class Player_Hurt : MonoBehaviour
     }
 
     private void Reset_Input(){
-        playerController.SetAcceptInput(true);
+        playerController.SetAcceptInput(true && !GameManager.instance.dead);
     }
 
     // private void Respawn(){
@@ -188,7 +188,7 @@ public class Player_Hurt : MonoBehaviour
         if(stateList.GetCurrentHealth() <= 0 && !GameManager.instance.dead){
             // GetComponent<BoxCollider2D>().enabled = false;
             playerController.SetAcceptInput(false);
-            Debug.Log($"Hurt's current health: {stateList.GetCurrentHealth()}!");
+            Debug.Log($"Hurt's current health: {stateList.GetCurrentHealth()}");
             // SceneManager.LoadScene("MainMenu");
             // Debug.Log("dead");
             GameManager.instance.LoadInScene();
